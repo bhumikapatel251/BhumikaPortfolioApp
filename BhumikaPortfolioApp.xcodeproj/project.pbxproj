@@ -8,17 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		AC36D33A28E5A7AC00623CC3 /* BhumikaPortfolioAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC36D33928E5A7AC00623CC3 /* BhumikaPortfolioAppApp.swift */; };
-		AC36D33C28E5A7AC00623CC3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC36D33B28E5A7AC00623CC3 /* ContentView.swift */; };
+		AC36D33C28E5A7AC00623CC3 /* PortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC36D33B28E5A7AC00623CC3 /* PortfolioView.swift */; };
 		AC36D33E28E5A7AD00623CC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC36D33D28E5A7AD00623CC3 /* Assets.xcassets */; };
 		AC36D34128E5A7AD00623CC3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC36D34028E5A7AD00623CC3 /* Preview Assets.xcassets */; };
+		AC36D34928E5A7F900623CC3 /* Portfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC36D34828E5A7F900623CC3 /* Portfolio.swift */; };
+		AC36D34B28E5A96300623CC3 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC36D34A28E5A96300623CC3 /* AppModel.swift */; };
+		AC36D34F28E5AD2400623CC3 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC36D34E28E5AD2400623CC3 /* HeaderView.swift */; };
+		AC36D35128E5B31300623CC3 /* SkillsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC36D35028E5B31300623CC3 /* SkillsView.swift */; };
+		AC36D35328E5B7F900623CC3 /* SkillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC36D35228E5B7F900623CC3 /* SkillView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AC36D33628E5A7AC00623CC3 /* BhumikaPortfolioApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BhumikaPortfolioApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC36D33928E5A7AC00623CC3 /* BhumikaPortfolioAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BhumikaPortfolioAppApp.swift; sourceTree = "<group>"; };
-		AC36D33B28E5A7AC00623CC3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AC36D33B28E5A7AC00623CC3 /* PortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioView.swift; sourceTree = "<group>"; };
 		AC36D33D28E5A7AD00623CC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC36D34028E5A7AD00623CC3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AC36D34828E5A7F900623CC3 /* Portfolio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Portfolio.swift; sourceTree = "<group>"; };
+		AC36D34A28E5A96300623CC3 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		AC36D34E28E5AD2400623CC3 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		AC36D35028E5B31300623CC3 /* SkillsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsView.swift; sourceTree = "<group>"; };
+		AC36D35228E5B7F900623CC3 /* SkillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +61,9 @@
 		AC36D33828E5A7AC00623CC3 /* BhumikaPortfolioApp */ = {
 			isa = PBXGroup;
 			children = (
+				AC36D34C28E5AB9900623CC3 /* View */,
+				AC36D34728E5A7D800623CC3 /* Model */,
 				AC36D33928E5A7AC00623CC3 /* BhumikaPortfolioAppApp.swift */,
-				AC36D33B28E5A7AC00623CC3 /* ContentView.swift */,
 				AC36D33D28E5A7AD00623CC3 /* Assets.xcassets */,
 				AC36D33F28E5A7AD00623CC3 /* Preview Content */,
 			);
@@ -65,6 +76,34 @@
 				AC36D34028E5A7AD00623CC3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AC36D34728E5A7D800623CC3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AC36D34828E5A7F900623CC3 /* Portfolio.swift */,
+				AC36D34A28E5A96300623CC3 /* AppModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AC36D34C28E5AB9900623CC3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC36D34D28E5AD0B00623CC3 /* SupportView */,
+				AC36D33B28E5A7AC00623CC3 /* PortfolioView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AC36D34D28E5AD0B00623CC3 /* SupportView */ = {
+			isa = PBXGroup;
+			children = (
+				AC36D34E28E5AD2400623CC3 /* HeaderView.swift */,
+				AC36D35028E5B31300623CC3 /* SkillsView.swift */,
+				AC36D35228E5B7F900623CC3 /* SkillView.swift */,
+			);
+			path = SupportView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +176,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC36D33C28E5A7AC00623CC3 /* ContentView.swift in Sources */,
+				AC36D35128E5B31300623CC3 /* SkillsView.swift in Sources */,
+				AC36D34F28E5AD2400623CC3 /* HeaderView.swift in Sources */,
+				AC36D34928E5A7F900623CC3 /* Portfolio.swift in Sources */,
+				AC36D33C28E5A7AC00623CC3 /* PortfolioView.swift in Sources */,
+				AC36D35328E5B7F900623CC3 /* SkillView.swift in Sources */,
 				AC36D33A28E5A7AC00623CC3 /* BhumikaPortfolioAppApp.swift in Sources */,
+				AC36D34B28E5A96300623CC3 /* AppModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
