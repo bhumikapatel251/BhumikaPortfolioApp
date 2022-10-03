@@ -18,6 +18,12 @@ struct PortfolioView: View {
             ScrollView(.vertical, showsIndicators: false){
                 VStack(alignment: .leading){
                     HeaderView(appModel: appModel)
+                    
+                    SkillView(skills: appModel.portfollio.skills, width: UIScreen.main.bounds.width - 40)
+                        .padding(.top,32)
+                    
+                    ExperiencesView(experiences: appModel.portfollio.experience)
+                        .padding(.top, 42)
                 }.padding(24)
             }
             

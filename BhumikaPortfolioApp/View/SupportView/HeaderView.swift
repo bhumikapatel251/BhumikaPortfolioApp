@@ -13,15 +13,19 @@ struct HeaderView: View {
     //MARK: Views
     var body: some View {
         VStack{
-            Image(systemName: "person")
-                .resizable()
-                .frame(width: 90, height: 90)
-                .padding(5)
-             .background(
-                   Circle()
-                .opacity(0.7)
-                .shadow(radius: 5)
-               )
+            HStack{
+                Spacer()
+                Image(systemName: "person")
+                    .resizable()
+                    .frame(width: 90, height: 90)
+                    .padding(5)
+                    .background(
+                        Circle()
+                            .opacity(0.7)
+                            .shadow(radius: 5)
+                    )
+                    Spacer()
+            }
             Text(appModel.portfollio.name)
                 .font(.title2)
                 .fontWeight(.semibold)

@@ -26,7 +26,7 @@ struct SkillsView: View {
                 .padding(.top, 4)
             
         }.padding()
-            .frame(width: width, height: 100)
+            .frame(width: width, height: 107.4)
             .background(
                 RoundedRectangle(cornerRadius: 12)
                     .opacity(0.075)

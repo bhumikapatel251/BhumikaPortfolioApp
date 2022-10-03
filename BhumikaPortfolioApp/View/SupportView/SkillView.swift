@@ -13,7 +13,7 @@ struct SkillView: View {
     @State var showSkills = true
     var body: some View {
         VStack(alignment: .leading){
-            HStack(spacing: 10){
+            HStack(spacing: 16){
                 Text("Skills")
                     .font(.title3).bold()
                     .opacity(0.9)
@@ -43,7 +43,7 @@ struct SkillView_Previews: PreviewProvider {
     static var previews: some View {
         GeometryReader { proxy in
             SkillView(skills: AppModel().portfollio.skills, width: 400)
-                .padding(15)
+                .padding(24)
         }
     }
 }
