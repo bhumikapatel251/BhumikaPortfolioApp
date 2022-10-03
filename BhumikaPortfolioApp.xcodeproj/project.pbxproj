@@ -17,6 +17,7 @@
 		AC36D35128E5B31300623CC3 /* SkillsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC36D35028E5B31300623CC3 /* SkillsView.swift */; };
 		AC36D35328E5B7F900623CC3 /* SkillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC36D35228E5B7F900623CC3 /* SkillView.swift */; };
 		AC76F6E828EABE0C00EC7578 /* ExperienceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC76F6E728EABE0C00EC7578 /* ExperienceView.swift */; };
+		AC76F6EA28EAC1BB00EC7578 /* ExperiencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC76F6E928EAC1BB00EC7578 /* ExperiencesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		AC36D35028E5B31300623CC3 /* SkillsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsView.swift; sourceTree = "<group>"; };
 		AC36D35228E5B7F900623CC3 /* SkillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillView.swift; sourceTree = "<group>"; };
 		AC76F6E728EABE0C00EC7578 /* ExperienceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceView.swift; sourceTree = "<group>"; };
+		AC76F6E928EAC1BB00EC7578 /* ExperiencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperiencesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				AC36D35028E5B31300623CC3 /* SkillsView.swift */,
 				AC36D35228E5B7F900623CC3 /* SkillView.swift */,
 				AC76F6E728EABE0C00EC7578 /* ExperienceView.swift */,
+				AC76F6E928EAC1BB00EC7578 /* ExperiencesView.swift */,
 			);
 			path = SupportView;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				AC36D34F28E5AD2400623CC3 /* HeaderView.swift in Sources */,
 				AC76F6E828EABE0C00EC7578 /* ExperienceView.swift in Sources */,
 				AC36D34928E5A7F900623CC3 /* Portfolio.swift in Sources */,
+				AC76F6EA28EAC1BB00EC7578 /* ExperiencesView.swift in Sources */,
 				AC36D33C28E5A7AC00623CC3 /* PortfolioView.swift in Sources */,
 				AC36D35328E5B7F900623CC3 /* SkillView.swift in Sources */,
 				AC36D33A28E5A7AC00623CC3 /* BhumikaPortfolioAppApp.swift in Sources */,

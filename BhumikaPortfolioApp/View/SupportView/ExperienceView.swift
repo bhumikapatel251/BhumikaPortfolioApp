@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ExperienceView: View {
     
-    var experience: Exprience
+    var experience: Experience
     
     var body: some View {
         VStack(alignment: .leading){
@@ -33,7 +33,7 @@ struct ExperienceView: View {
 struct ExperienceView_Previews: PreviewProvider {
     static var previews: some View {
         GeometryReader{ proxy in
-            ExperienceView(experience: AppModel().portfollio.exprience[0])
+            ExperienceView(experience: AppModel().portfollio.experience[0])
                 .padding(24)
         }
     }

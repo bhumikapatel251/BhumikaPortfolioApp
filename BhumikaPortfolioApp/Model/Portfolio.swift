@@ -13,7 +13,7 @@ struct Skill: Identifiable {
     let image: String
 }
 
-struct Exprience: Identifiable {
+struct Experience: Identifiable {
     var id: String
     let role: String
 }
@@ -25,5 +25,5 @@ struct Portfolio {
     let location: String
     
     let skills: [Skill]
-    let exprience: [Exprience]
+    let experience: [Experience]
 }
