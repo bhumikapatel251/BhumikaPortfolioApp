@@ -16,6 +16,11 @@ struct ExperienceView: View {
             Circle()
                 .frame(width: 10, height: 10)
                 .opacity(0.65)
+            VStack(alignment: .leading){
+                RoundedRectangle(cornerRadius: 8)
+                    .frame(width: 3)
+                    .padding(.leading,3)
+            }
         }
     }
 }
