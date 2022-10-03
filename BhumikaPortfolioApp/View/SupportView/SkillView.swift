@@ -12,7 +12,7 @@ struct SkillView: View {
     var width: CGFloat
     @State var showSkills = true
     var body: some View {
-        VStack{
+        VStack(alignment: .leading){
             HStack(spacing: 10){
                 Text("Skills")
                     .font(.title3).bold()
@@ -26,13 +26,22 @@ struct SkillView: View {
                         .rotationEffect(self.showSkills ? .zero : .degrees(180))
                 }.buttonStyle(PlainButtonStyle())
             }
-           // LazyVGrid(columns: <#T##[GridItem]#>, content: <#T##() -> _#>)
+            if(showSkills){
+                LazyVGrid(columns: [GridItem(), GridItem(), GridItem()], alignment: .leading, spacing: 12) {
+                    ForEach(skills) { skill in
+                        SkillsView(skill: skill, width: width / 3 - 15 )
+                    }
+                }.padding(.top,38)
+            }
         }
     }
 }
 
 struct SkillView_Previews: PreviewProvider {
     static var previews: some View {
-        SkillView(skills: AppModel().portfollio.skills, width: 400)
+        GeometryReader { proxy in
+            SkillView(skills: AppModel().portfollio.skills, width: 400)
+                .padding(15)
+        }
     }
 }
