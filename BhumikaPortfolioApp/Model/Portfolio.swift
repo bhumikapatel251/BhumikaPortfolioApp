@@ -16,6 +16,8 @@ struct Skill: Identifiable {
 struct Experience: Identifiable {
     var id: String
     let role: String
+    let companyName: String
+    let duration: String
 }
 
 struct Portfolio {

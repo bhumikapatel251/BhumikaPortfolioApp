@@ -13,5 +13,7 @@ class AppModel: ObservableObject {
     Skill(id: UUID().uuidString, skillName: "swift 5.7", image: "swift"),
     Skill(id: UUID().uuidString, skillName: "Xcode 14.0.1", image: "Xcode")],
     experience: [
-        Experience(id: UUID().uuidString, role: "6 month learning Phase")])
+        Experience(id: UUID().uuidString, role: "6 month learning Phase", companyName: "Self Learning", duration: " " ),
+        Experience(id: UUID().uuidString, role: "Computer Instructor", companyName: "KadiWala School", duration: "11/06/2018 to 20/06/2019")
+    ])
 }
