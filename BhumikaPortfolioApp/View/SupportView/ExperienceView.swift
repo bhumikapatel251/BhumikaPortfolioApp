@@ -25,13 +25,16 @@ struct ExperienceView: View {
                         .font(.system(size: 18))
                         .fontWeight(.medium)
                 }.padding(.leading,16)
-            }
-        }
+            }.padding(.top,8)
+        }.fixedSize()
     }
 }
 
 struct ExperienceView_Previews: PreviewProvider {
     static var previews: some View {
-        ExperienceView(experience: AppModel().portfollio.exprience[0])
+        GeometryReader{ proxy in
+            ExperienceView(experience: AppModel().portfollio.exprience[0])
+                .padding(24)
+        }
     }
 }
