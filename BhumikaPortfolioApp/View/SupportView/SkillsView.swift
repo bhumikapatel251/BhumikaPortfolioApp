@@ -11,7 +11,7 @@ struct SkillsView: View {
     //MARK: variable
     
     var skill: Skill
-    var width: CGFloat = 110
+    var width: CGFloat = 120
     
     //MARK: views
     
@@ -21,12 +21,12 @@ struct SkillsView: View {
                 .font(.system(size: 35, weight: .medium))
                 .opacity(0.8)
             Text(skill.skillName)
-                .font(.callout)
+                .font(.system(size: 13.5))
                 .fontWeight(.semibold)
-                .padding(.top, 4)
+                .padding(.top, 10)
             
         }.padding()
-            .frame(width: width, height: 107.4)
+            .frame(width: width, height: 109.7)
             .background(
                 RoundedRectangle(cornerRadius: 12)
                     .opacity(0.075)

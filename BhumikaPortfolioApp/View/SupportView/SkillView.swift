@@ -15,6 +15,7 @@ struct SkillView: View {
         VStack(alignment: .leading){
             HStack(spacing: 16){
                 Text("Skills")
+                    .font(.system(size: 21))
                     .font(.title3).bold()
                     .opacity(0.9)
                 
