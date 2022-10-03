@@ -19,7 +19,9 @@ struct SkillView: View {
                     .opacity(0.9)
                 
                 Button{
-                    showSkills.toggle()
+                    withAnimation(.easeInOut(duration: 0.35)) {
+                        showSkills.toggle()
+                    }
                 } label: {
                     Image(systemName: "chevron.up")
                         .font(.system(size: 18, weight: .medium))
