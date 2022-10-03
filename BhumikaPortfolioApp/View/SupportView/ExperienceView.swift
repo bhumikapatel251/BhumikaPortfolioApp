@@ -16,10 +16,15 @@ struct ExperienceView: View {
             Circle()
                 .frame(width: 10, height: 10)
                 .opacity(0.65)
-            VStack(alignment: .leading){
+            HStack{
                 RoundedRectangle(cornerRadius: 8)
                     .frame(width: 3)
                     .padding(.leading,3)
+                VStack(alignment: .leading){
+                    Text(experience.role)
+                        .font(.system(size: 18))
+                        .fontWeight(.medium)
+                }.padding(.leading,16)
             }
         }
     }
