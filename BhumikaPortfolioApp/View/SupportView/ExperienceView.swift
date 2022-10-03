@@ -15,6 +15,7 @@ struct ExperienceView: View {
         VStack(alignment: .leading){
             Circle()
                 .frame(width: 10, height: 10)
+                .opacity(0.65)
         }
     }
 }
